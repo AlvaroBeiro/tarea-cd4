@@ -2,9 +2,23 @@ package tareacd4;
 
 import banco.CtaCorriente;
 import java.util.Scanner;
-
+/**
+ * Clase principal, crea una instancia de una cuenta
+ * corriente y realiza operaciones sobre ella.
+ * 
+ * @author Alvaro
+ * @version 1.1
+ * @since 1.0
+ * @see CtaCorriente
+ */
 public class Main {
-
+    
+    /**
+     * Crea una cuenta corriente nueva e imprime el saldo en pantalla.
+     * Tras ello llama a operativa_cuenta
+     * 
+     * @param args vacío
+     */
     public static void main(String[] args) {
         CtaCorriente miCuenta;
         double saldoActual;
@@ -16,6 +30,12 @@ public class Main {
         operativa_cuenta(miCuenta);
     }
 
+    
+    /**
+     * Realiza operaciones sobre la cuenta
+     * 
+     * @param miCuenta La cuenta sobre la que realizar las operaciones
+     */
     public static void operativa_cuenta(CtaCorriente miCuenta) {
         try {
             Scanner entrada = new Scanner(System.in);
